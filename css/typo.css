@@ -225,12 +225,12 @@ input[type=reset]:hover {background-color: #E1E1E1;}
 .tip-title {  padding: 0;margin: 0;font-weight: bold; margin-top: -15px;padding-top: 15px;  padding-bottom: 5px;background: url(../images/selector-arrow.png) no-repeat;}
 .tip-text { margin: 0;}
 
-.jl_module div.joomlike_white , .jl_module div.joomlike_white h3{ background: white;}
-.jl_module div.joomlike_red , .jl_module div.joomlike_red h3{ background: red; color: white;}
-.jl_module div.joomlike_green, .jl_module div.joomlike_green h3{ background: green; color: white;}
-.jl_module div.joomlike_blue , .jl_module div.joomlike_blue h3{ background: blue; color: white;}
-.jl_module div.joomlike_yellow, .jl_module div.joomlike_yellow h3 {background: yellow; color: #000;}
-.jl_module div.joomlike_black, .jl_module div.joomlike_black h3 { background: black; color: #fff;}
+.jl_module div.jsent_white , .jl_module div.jsent_white h3{ background: white;}
+.jl_module div.jsent_red , .jl_module div.jsent_red h3{ background: red; color: white;}
+.jl_module div.jsent_green, .jl_module div.jsent_green h3{ background: green; color: white;}
+.jl_module div.jsent_blue , .jl_module div.jsent_blue h3{ background: blue; color: white;}
+.jl_module div.jsent_yellow, .jl_module div.jsent_yellow h3 {background: yellow; color: #000;}
+.jl_module div.jsent_black, .jl_module div.jsent_black h3 { background: black; color: #fff;}
 
 /**
  * 

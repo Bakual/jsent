@@ -4,7 +4,7 @@
  * Error view
  *
  * @version             1.0.0
- * @package             Joomlike Framework
+ * @package             Jsent Framework
  * @copyright			Copyright (C) 2012 vonfio.de. All rights reserved.
  *               
  */
@@ -115,7 +115,7 @@ $templateURL = $this->baseurl."/templates/".$this->template;
             </div>
             </div>
             
-            <div class="jl_clear"></div>
+            <div class="clearfix"></div>
         
 		</div>
     	<!-- Top -- End -->
@@ -127,11 +127,11 @@ $templateURL = $this->baseurl."/templates/".$this->template;
             <div id="jl_mainmenu_maxi">
             	<?php $module = JModuleHelper::getModule( 'menu' );
                     echo JModuleHelper::renderModule( $module);	?>
-                    <div class="jl_clear"></div>     
+                    <div class="clearfix"></div>
             </div>
             </div>
         </div>
-        <div class="jl_clear"></div>
+        <div class="clearfix"></div>
         </div> 
         <!-- Navigation Bar -- End -->
                         
@@ -143,7 +143,7 @@ $templateURL = $this->baseurl."/templates/".$this->template;
             <div id="jl_header">
             <div id="jl_headerimage">
                 <img src="<?php echo $this->baseurl; ?>/<?php echo $headerimage; ?>" /> 
-                <div class="jl_clear"></div>
+                <div class="clearfix"></div>
             </div>
             </div>
         <!-- Header End -->
@@ -171,7 +171,7 @@ $templateURL = $this->baseurl."/templates/".$this->template;
     
             </div>
             
-            <div class="jl_clear"></div>
+            <div class="clearfix"></div>
             
         </div>
         <!-- Container Main -- End -->
@@ -194,7 +194,7 @@ $templateURL = $this->baseurl."/templates/".$this->template;
         </div>
     
     </div>
-        <div class="jl_clear"></div>
+        <div class="clearfix"></div>
     </div>
     
 	<div id="jl_bottom_left"><div id="jl_bottom_right"></div></div>

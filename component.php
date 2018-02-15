@@ -4,7 +4,7 @@
  * Component view
  *
  * @version             1.0.0
- * @package             Joomlike Framework
+ * @package             Jsent Framework
  * @copyright			Copyright (C) 2012 vonfio.de. All rights reserved.
  *               
  */
