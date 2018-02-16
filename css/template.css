@@ -149,7 +149,7 @@ fieldset, form, label, legend {
     height: 40px;
     margin: 0;
     padding: 4px 15px;
-    border: 0px none;
+    border: 0 none;
     float: left;
     width: 100%;
     background: none !important;
@@ -208,9 +208,7 @@ fieldset, form, label, legend {
 }
 
 #jl_toolbar {
-    background-image: url(../images/submenu.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
+    background: url(../images/submenu.png) repeat-x bottom;
     border-radius: 0 0 3px 3px;
     margin: -1px 0 0 0;
     padding: 1em 1em 0.75em 1em;
@@ -266,10 +264,8 @@ fieldset, form, label, legend {
 
 .jl_module div {
     border-radius: 3px;
-    background-color: #FFFFFF;
-    background-image: url(../images/module.png);
-    background-repeat: repeat-x;
-    margin-bottom: 0em;
+    background: #FFFFFF url(../images/module.png) repeat-x;
+    margin-bottom: 0;
     padding: 0.25em 0.75em;
 }
 
@@ -314,8 +310,7 @@ fieldset, form, label, legend {
 }
 
 .jl_module .moduletableblue, .jl_module .moduletablegreen, .jl_module .moduletablered, .jl_module .moduletableyellow {
-    background-image: url(../images/white_pixel.gif);
-    background-repeat: repeat-x;
+    background: url(../images/white_pixel.gif) repeat-x;
     border-radius: 0;
 }
 
@@ -571,8 +566,7 @@ div.icons > div {
     padding: 0.4em 0.8em 0 0.8em;
     border: none;
     margin: 0;
-    background-repeat: repeat-x;
-    background-position: top;
+    background: repeat-x top;
     border-radius: 5px 5px 0 0;
 }
 
@@ -608,7 +602,7 @@ div.icons > div {
 }
 
 #jl_mainmenu_maxi ul li:last-child a, #jl_mainmenu_maxi ul li:last-child .separator {
-    background-image: url(none);
+    background-image: none;
 }
 
 #jl_mainmenu_maxi ul li li a, #jl_mainmenu_maxi ul li li .separator {
@@ -658,14 +652,14 @@ div.icons > div {
 }
 
 #jl_mainmenu_maxi ul li.active li {
-    background: #FFF url(none));
+    background: #FFF none;
     padding: 5px 0;
     margin: 0;
     height: 120%;
 }
 
 #jl_mainmenu_maxi ul li.active li a, #jl_mainmenu_maxi ul li li.active a, #jl_mainmenu_maxi ul li.active li .separator, #jl_mainmenu_maxi ul li li.active .separator {
-    background: #FFF url(none);
+    background: #FFF none;
     height: 120%;
     line-height: 120%;
     padding: 0 15px 0 15px;
@@ -678,7 +672,7 @@ div.icons > div {
 
 #jl_mainmenu_maxi ul li li, #jl_mainmenu_maxi ul li li a {
     float: none;
-    background-image: url(none);
+    background-image: none;
 }
 
 #jl_mainmenu_maxi ul li ul a, #jl_mainmenu_maxi ul li ul span {
@@ -708,9 +702,7 @@ div.icons > div {
 }
 
 #jl_submenu {
-    background-image: url(../images/submenu.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
+    background: url(../images/submenu.png) repeat-x bottom;
     border-radius: 0 0 3px 3px;
     margin: -1px 0;
     padding: 0.7em 0.8em;
@@ -798,13 +790,11 @@ div.icons > div {
 }
 
 .jl_sidebar ul.menu li a, .jl_sidebar ul.menu li .separator, .jl_sidebar ul.menu li.current a, .jl_sidebar ul.menu li.current .separator {
-    background-image: url(../images/indent1.png);
-    background-repeat: no-repeat;
-    background-position: left;
+    background: url(../images/indent1.png) no-repeat left;
     display: block;
     color: #333;
     text-decoration: none;
-    margin: 2px 0px;
+    margin: 2px 0;
     padding: 5px 0 5px 17px;
 }
 
@@ -813,9 +803,7 @@ div.icons > div {
 }
 
 .jl_sidebar ul.menu li.current li a, .jl_sidebar ul.menu li.current li .separator, .jl_sidebar ul.menu li li a, .jl_sidebar ul.menu li li .separator, .jl_sidebar ul.menu li li.current a, .jl_sidebar ul.menu li li.current .separator, .jl_sidebar ul.menu li li.current li a, .jl_sidebar ul.menu li li.current li .separator, .jl_sidebar ul.menu li li li a, .jl_sidebar ul.menu li li li .separator {
-    background-image: url(../images/indent4.png);
-    background-repeat: no-repeat;
-    background-position: 0px 10px;
+    background: url(../images/indent4.png) no-repeat 0 10px;
     padding: 3px 0 3px 3px;
     margin: 2px 0 2px 13px;
     display: block;

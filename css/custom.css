@@ -6,10 +6,6 @@
  * Custom Rules
  */
 
-/* Import default Bootstrap 2.3 */
-@import url("../../../media/jui/css/bootstrap.min.css");
-@import url("../../../media/jui/css/bootstrap-responsive.min.css");
-
 /* Menu */
 #jl_mainmenu_maxi ul li ul {width:14em;}
 #jl_submenu_maxi ul ul {width:14em;}

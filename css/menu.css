@@ -1,11 +1,12 @@
 /**
- * @author vonFio.de
- * @copyright Copyright (C) 2012
- */
+ * @package     JSEnt
+ * @subpackage  Template
+ * @author      Thomas Hunziker <bakual@bakual.net>
+ * @copyright   © 2018 - Thomas Hunziker
+ * @license     https://creativecommons.org/licenses/by-sa/3.0/
+ **/
 
-
-.----jl_topmenu-------------------------------------------------- {}
-
+/* jl_topmenu */
 #jl_topmenu ul, #jl_footer_right ul {
     list-style-type: none;
     margin: 0;
@@ -43,7 +44,7 @@
     text-decoration: none;
 }
 
-.----Suckerfish-1.Level-------------------------------------------------- {}
+/* Suckerfish-1.Level */
  
 #jl_mainmenu {  
 	padding: 0.4em 0.8em 0 0.8em;
@@ -121,10 +122,8 @@
 } 
 
 /* second-level lists */
-.----Suckerfish-2.Level-------------------------------------------------- {}
+/* Suckerfish-2.Level */
 
-
- 
 .jl_menu ul.mainmenu li ul { 
 	position: absolute; 
 	width: 10em;
@@ -161,7 +160,7 @@
 
 
 /* third-and-above-level lists */
-.----Suckerfish-3.Level-------------------------------------------------- {}
+/* Suckerfish-3.Level */
 .jl_menu ul.mainmenu li ul ul, .jl_menu ul.mainmenu li.active ul ul { 
 	margin: -1em 0 0 8em;
 }
@@ -176,7 +175,7 @@
  
 
 /* submenu lists */
-.----Submenu-------------------------------------------------- {}
+/* Submenu */
 
 
 #jl_submenu {
@@ -212,9 +211,7 @@
 
 
 /* Sidebar Menu */
-.----Sidebar Menu-------------------------------------------------- {}
-
-.jl_sidebar ul.menu, 
+.jl_sidebar ul.menu,
 .jl_sidebar ul.menu li {
 	list-style-type: none !important;
 	padding: 0;
@@ -268,10 +265,7 @@
 
 
 /* Toggle Menu */
-.----Toggle Menu-------------------------------------------------- {}
-
-
-.toggleMainmenu, .toggleSubmenu { display:  none; width: 90%;  } 
+.toggleMainmenu, .toggleSubmenu { display:  none; width: 90%;  }
 
 #jl_navigation a.toggleMainmenu , #jl_navigation a.toggleSubmenu  { display:  none;  height: 34px; line-height: 30px; margin: 0 0 0.3em 0; padding:0 1em 0 3.3em;  color: #FFF; }
 .jl_style_light #jl_mainmenu a.toggleMainmenu {color: #999; }
