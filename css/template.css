@@ -380,11 +380,9 @@ fieldset, form, label, legend {
     overflow: hidden;
 }
 
-#jl_content_inset, #jl_content_inset_contentleft_contentright, #jl_content_inset_contentleft, #jl_content_inset_contentright {
-    float: right;
-}
-
-#jl_content_out, #jl_content_out_left, #jl_content_out_right, #jl_content_out_left_right, #jl_content2_inset, #jl_content2_inset_contentright {
+#jl_content_out, #jl_content_out_left, #jl_content_out_right, #jl_content_out_left_right,
+#jl_content_inset, #jl_content_inset_left, #jl_content_inset_right, #jl_content_inset_left_right,
+#jl_content2_inset {
     float: left;
 }
 

@@ -13,10 +13,6 @@ defined('_JEXEC') or die;
 // Output as HTML5
 $this->setHtml5(true);
 
-// Calculate Width
-$left  = $this->countModules('position-7') ? '_left' : '';
-$right = $this->countModules('position-8') ? '_right' : '';
-
 // Shortcuts
 $path = $this->baseurl . '/templates/' . $this->template . '/';
 
@@ -143,7 +139,7 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 							</div>
 						<?php endif; ?>
 
-						<div id="jl_maincontent">
+						<div id="jl_maincontent" class="clearfix">
 							<?php if ($this->countModules('position-7')) : ?>
 								<div id="jl_left">
 									<div class="jl_sidebar">
@@ -153,7 +149,9 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 									</div>
 								</div>
 							<?php endif; ?>
-							<div id="jl_content_out<?php echo $left . $right; ?>">
+							<?php $idSuffix = $this->countModules('position-7') ? '_left' : ''; ?>
+							<?php $idSuffix .= $this->countModules('position-8') ? '_right' : ''; ?>
+							<div id="jl_content_out<?php echo $idSuffix; ?>">
 
 								<?php if ($this->countModules('top')) : ?>
 									<div class="jl_over_content">
@@ -163,9 +161,22 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 									</div>
 								<?php endif; ?>
 
-								<div id="jl_maincontent_2">
-									<div id="jl_content_inset<?php echo $contentleft . $contentright; ?>">
-										<div id="jl_content2_inset<?php echo $contentright; ?>" class="jl_content2_inset">
+								<div id="jl_maincontent_2" class="clearfix">
+
+									<?php if ($this->countModules('contentleft')) : ?>
+										<div id="jl_contentleft">
+											<div class="jl_sidebar">
+												<div class="jl_module">
+													<jdoc:include type="modules" name="contentleft" style="xhtml"/>
+												</div>
+											</div>
+										</div>
+									<?php endif ?>
+
+									<?php $idSuffix = $this->countModules('contentleft') ? '_left' : ''; ?>
+									<?php $idSuffix .= $this->countModules('contentright') ? '_right' : ''; ?>
+									<div id="jl_content_inset<?php echo $idSuffix; ?>">
+										<div id="jl_content2_inset">
 
 											<?php if ($this->countModules('content-top')) : ?>
 												<div class="jl_contenttop clearfix">
@@ -198,24 +209,13 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 											<?php endif; ?>
 
 										</div>
-
-										<?php if ($this->countModules('contentright')) : ?>
-											<div id="jl_contentright">
-												<div class="jl_sidebar">
-													<div class="jl_module">
-														<jdoc:include type="modules" name="contentright" style="xhtml"/>
-													</div>
-												</div>
-											</div>
-										<?php endif ?>
-
 									</div>
 
-									<?php if ($this->countModules('contentleft')) : ?>
-										<div id="jl_contentleft">
+									<?php if ($this->countModules('contentright')) : ?>
+										<div id="jl_contentright">
 											<div class="jl_sidebar">
 												<div class="jl_module">
-													<jdoc:include type="modules" name="contentleft" style="xhtml"/>
+													<jdoc:include type="modules" name="contentright" style="xhtml"/>
 												</div>
 											</div>
 										</div>
@@ -223,21 +223,11 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 
 								</div>
 
-								<?php if ($this->countModules('position-9 or position-10')) : ?>
+								<?php if ($this->countModules('bottom')) : ?>
 									<div class="jl_under_content">
-
-										<?php if ($this->countModules('position-9')) : ?>
-											<div class="jl_module">
-												<jdoc:include type="modules" name="position-9" style="responsive"/>
-											</div>
-										<?php endif; ?>
-
-										<?php if ($this->countModules('position-10')) : ?>
-											<div class="jl_module">
-												<jdoc:include type="modules" name="position-10" style="responsive"/>
-											</div>
-										<?php endif; ?>
-
+										<div class="jl_module row-fluid">
+											<jdoc:include type="modules" name="bottom" style="responsive"/>
+										</div>
 									</div>
 								<?php endif; ?>
 							</div>
@@ -251,12 +241,11 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 								</div>
 							<?php endif; ?>
 						</div>
-						<div class="clearfix"></div>
 
-						<?php if ($this->countModules('bottom')) : ?>
+						<?php if ($this->countModules('beforefooter')) : ?>
 							<div class="jl_positions clearfix">
 								<div class="jl_module">
-									<jdoc:include type="modules" name="bottom" style="xhtml"/>
+									<jdoc:include type="modules" name="beforefooter" style="xhtml"/>
 								</div>
 							</div>
 						<?php endif; ?>

@@ -14,14 +14,7 @@ $sidebarWidth = $this->params->get("sidebarWidth", "25");
 $cellpadding   = $this->params->get("cellpadding", "0.5em");
 $contentleft   = $this->countModules("contentleft") ? '_contentleft' : '';
 $contentright  = $this->countModules("contentright") ? '_contentright' : '';
-
-if (($contentleft or $contentright) > 0)
-{
-	$contentleft_sidebar_width    = $sidebarWidth;
-	$contentleft_sidebar_width_2  = 100 - $contentleft_sidebar_width;
-	$contentright_sidebar_width   = $contentleft_sidebar_width * 1.32;
-	$contentright_sidebar_width_2 = 100 - $contentright_sidebar_width;
-}
+// Removed: inset_contentright, inset_contentleft
 ?>
 <style type="text/css">
 	<?php if ($this->params->get('googleFont', 1)) : ?>
@@ -30,14 +23,14 @@ if (($contentleft or $contentright) > 0)
 		}
 	<?php endif; ?>
 
-	#jl_left {
+	#jl_left, #jl_contentleft {
 		width: <?php echo $sidebarWidth; ?>%;
 	}
 	#jl_left .jl_sidebar {
 		padding-right: <?php echo $cellpadding; ?>;
 	}
 
-	#jl_right {
+	#jl_right, #jl_contentright {
 		width: <?php echo $sidebarWidth; ?>%;
 	}
 
@@ -45,36 +38,24 @@ if (($contentleft or $contentright) > 0)
 		padding-left: <?php echo $cellpadding; ?>;
 	}
 
-	#jl_content_out, #jl_content_inset1 {
+	#jl_content_out,
+	#jl_content_inset {
 		width: 100%;
 	}
 
-	#jl_content_out_left, #jl_content_out_right {
+	#jl_content_out_left, #jl_content_out_right,
+	#jl_content_inset_left, #jl_content_inset_right,
+	{
 		width: <?php echo 100 - $sidebarWidth; ?>%;
 	}
 
-	#jl_content_out_left_right {
+	#jl_content_out_left_right,
+	#jl_content_inset_left_right {
 		width: <?php echo 100 - 2 * $sidebarWidth; ?>%;
 	}
 
-	#jl_contentleft {
-		width: <?php echo $contentleft_sidebar_width; ?>%;
-	}
-
-	#jl_contentright {
-		width: <?php echo $contentright_sidebar_width; ?>%;
-	}
-
-	#jl_content_inset, #jl_content_inset_contentright, #jl_content2_inset, #jl_content_contentleft {
+	#jl_content2_inset, #jl_content_contentleft {
 		width: 100%;
-	}
-
-	#jl_content_inset_contentleft_contentright, #jl_content_inset_contentleft {
-		width: <?php echo $contentleft_sidebar_width_2; ?>%;
-	}
-
-	#jl_content2_inset_contentright {
-		width: <?php echo $contentright_sidebar_width_2; ?>%;
 	}
 
 	.jl_un_separate {
@@ -85,7 +66,7 @@ if (($contentleft or $contentright) > 0)
 		padding-bottom: <?php echo $cellpadding; ?>;
 	}
 
-	.jl_content2_inset, #jl_contentright, #jl_contentleft, .jl_module div, #jl_contentleft, #jl_contentright, .jl_contentbottom {
+	#jl_content2_inset, #jl_contentright, #jl_contentleft, .jl_module div, #jl_contentleft, #jl_contentright, .jl_contentbottom {
 		margin-bottom: <?php echo $cellpadding; ?>;
 	}
 
