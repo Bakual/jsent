@@ -157,7 +157,7 @@ td.ferien:hover {
 
 /* JSENT Footer verstecken */
 #jl_copyright {
-  display: none;
+  /* display: none; */
 }
 
 /* Phoca Gallery Link verstecken */

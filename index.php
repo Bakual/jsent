@@ -22,7 +22,6 @@ $path = $this->baseurl . '/templates/' . $this->template . '/';
 
 // Load Bootstrap
 JHtmlBootstrap::loadCss(true, $this->direction);
-// require_once('layout/default.php');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -37,7 +36,7 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 	<?php if ($this->direction == 'rtl') : ?>
 		<link href="<?php echo $path; ?>css/template_rtl.css" rel="stylesheet"/>
 	<?php endif; ?>
-	<?php if ($this->params->get('googleFont')) : ?>
+	<?php if ($this->params->get('googleFont', 1)) : ?>
 		<?php $googleFontFamily = str_replace('+', ' ', $this->params->get('googleFontFamily')); ?>
 		<link href="//fonts.googleapis.com/css?family=<?php echo $googleFontFamily; ?>" rel="stylesheet"/>
 	<?php endif; ?>
@@ -54,7 +53,10 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 					<div id="jl_top">
 
 						<?php if ($this->countModules('logo')) : ?>
-							<div id="jl_topleft<?php echo $breaking . $topmenuCount . $search; ?>">
+							<?php $idSuffix = $this->countModules('article') ? '_breaking' : ''; ?>
+							<?php $idSuffix .= $this->countModules('topmenu') ? '_topmenu' : ''; ?>
+							<?php $idSuffix .= $this->countModules('search') ? '_search' : ''; ?>
+							<div id="jl_topleft<?php echo $idSuffix; ?>">
 								<div id="jl_logo">
 									<a href="<?php echo $this->baseurl; ?>">
 										<jdoc:include type="modules" name="logo" style="xhtml"/>
@@ -64,7 +66,11 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 						<?php endif; ?>
 
 						<?php if ($this->countModules('article or topmenu or position-0')) : ?>
-							<div id="jl_topright<?php echo $breaking . $topmenuCount . $search . $logoimg; ?>">
+							<?php $idSuffix = $this->countModules('article') ? '_breaking' : ''; ?>
+							<?php $idSuffix .= $this->countModules('topmenu') ? '_topmenu' : ''; ?>
+							<?php $idSuffix .= $this->countModules('search') ? '_search' : ''; ?>
+							<?php $idSuffix .= $this->countModules("logo") ? '_logo' : ''; ?>
+							<div id="jl_topright<?php echo $idSuffix; ?>">
 
 								<?php if ($this->countModules('article')) : ?>
 									<div id="jl_article">
@@ -231,7 +237,7 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 										</div>
 									<?php endif; ?>
 								</div>
-								<?php if ($this->countModules('position-7')) : ?>
+								<?php if ($this->countModules('position-8')) : ?>
 									<div id="jl_right">
 										<div class="jl_separate_left">
 											<div class="jl_sidebar">
