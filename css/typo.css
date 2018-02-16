@@ -89,7 +89,9 @@ blockquote {
 .jl_module, .jl_module p, .jl_module td, .jl_module ul li, .category-list, .category-list p, .category-list li {
 }
 
-#jl_article p, #jl_article, dt, dd, #jl_article h3, #jl_pathway, #jl_pathway span, #jl_pathway a, #jl_footer, .readmore, .tip-text, .article-info dd, #jl_footer_left {
+#jl_article p, #jl_article div, #jl_article, dt, dd, #jl_article h3,
+#jl_pathway, #jl_pathway span, #jl_pathway a,
+#jl_footer, .readmore, .tip-text, .article-info dd, #jl_footer_left {
     font-size: 90%;
 }
 

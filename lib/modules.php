@@ -15,19 +15,6 @@ $cellpadding   = $this->params->get("cellpadding", "0.5em");
 $contentleft   = $this->countModules("contentleft") ? '_contentleft' : '';
 $contentright  = $this->countModules("contentright") ? '_contentright' : '';
 
-if ($this->countModules('position-7'))
-{
-	$left_sidebar_width    = $sidebarWidth;
-	$left_sidebar_width_2  = 100 - $left_sidebar_width;
-	$right_sidebar_width   = $left_sidebar_width * 1.32;
-	$right_sidebar_width_2 = 100 - $right_sidebar_width;
-}
-else
-{
-	$right_sidebar_width   = $sidebarWidth;
-	$right_sidebar_width_2 = 100 - $right_sidebar_width;
-}
-
 if (($contentleft or $contentright) > 0)
 {
 	$contentleft_sidebar_width    = $sidebarWidth;
@@ -44,23 +31,30 @@ if (($contentleft or $contentright) > 0)
 	<?php endif; ?>
 
 	#jl_left {
-		width: <?php echo $left_sidebar_width; ?>%;
+		width: <?php echo $sidebarWidth; ?>%;
+	}
+	#jl_left .jl_sidebar {
+		padding-right: <?php echo $cellpadding; ?>;
 	}
 
 	#jl_right {
-		width: <?php echo $right_sidebar_width; ?>%;
+		width: <?php echo $sidebarWidth; ?>%;
 	}
 
-	#jl_right_out, #jl_right_out_right, #jl_content_out, #jl_content_inset1 {
+	#jl_right .jl_sidebar {
+		padding-left: <?php echo $cellpadding; ?>;
+	}
+
+	#jl_content_out, #jl_content_inset1 {
 		width: 100%;
 	}
 
-	#jl_right_out_left, #jl_right_out_left_right {
-		width: <?php echo $left_sidebar_width_2; ?>%;
+	#jl_content_out_left, #jl_content_out_right {
+		width: <?php echo 100 - $sidebarWidth; ?>%;
 	}
 
-	#jl_content_out_right {
-		width: <?php echo $right_sidebar_width_2; ?>%;
+	#jl_content_out_left_right {
+		width: <?php echo 100 - 2 * $sidebarWidth; ?>%;
 	}
 
 	#jl_contentleft {
@@ -83,11 +77,7 @@ if (($contentleft or $contentright) > 0)
 		width: <?php echo $contentright_sidebar_width_2; ?>%;
 	}
 
-	.jl_separate_right {
-		padding-right: <?php echo $cellpadding; ?>;
-	}
-
-	.jl_un_separate, .jl_separate_left {
+	.jl_un_separate {
 		padding-left: <?php echo $cellpadding; ?>;
 	}
 

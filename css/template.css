@@ -319,10 +319,6 @@ fieldset, form, label, legend {
     border: 1px solid #FFF;
 }
 
-.jl_separate_left, .jl_separate_right {
-    width: auto;
-}
-
 .first .jl_separate_left, .first .jl_separate_right {
     padding: 0;
 }
@@ -384,11 +380,11 @@ fieldset, form, label, legend {
     overflow: hidden;
 }
 
-#jl_right_out, #jl_right_out_left_right, #jl_right_out_left, #jl_right_out_right, #jl_content_inset, #jl_content_inset_contentleft_contentright, #jl_content_inset_contentleft, #jl_content_inset_contentright {
+#jl_content_inset, #jl_content_inset_contentleft_contentright, #jl_content_inset_contentleft, #jl_content_inset_contentright {
     float: right;
 }
 
-#jl_content_out, #jl_content_out_right, #jl_content2_inset, #jl_content2_inset_contentright {
+#jl_content_out, #jl_content_out_left, #jl_content_out_right, #jl_content_out_left_right, #jl_content2_inset, #jl_content2_inset_contentright {
     float: left;
 }
 

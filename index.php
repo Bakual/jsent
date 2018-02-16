@@ -144,74 +144,66 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 						<?php endif; ?>
 
 						<div id="jl_maincontent">
-							<div id="jl_right_out<?php echo $left . $right; ?>">
-								<div id="jl_content_out<?php echo $right; ?>">
+							<?php if ($this->countModules('position-7')) : ?>
+								<div id="jl_left">
+									<div class="jl_sidebar">
+										<div class="jl_module">
+											<jdoc:include type="modules" name="position-7" style="xhtml"/>
+										</div>
+									</div>
+								</div>
+							<?php endif; ?>
+							<div id="jl_content_out<?php echo $left . $right; ?>">
 
-									<?php if ($this->countModules('position-7 or position-8')) : ?>
-										<div class="jl_over_content">
+								<?php if ($this->countModules('top')) : ?>
+									<div class="jl_over_content">
+										<div class="jl_module row-fluid">
+											<jdoc:include type="modules" name="top" style="responsive"/>
+										</div>
+									</div>
+								<?php endif; ?>
 
-											<?php if ($this->countModules('top')) : ?>
-												<div class="jl_module row-fluid">
-													<jdoc:include type="modules" name="top" style="responsive"/>
+								<div id="jl_maincontent_2">
+									<div id="jl_content_inset<?php echo $contentleft . $contentright; ?>">
+										<div id="jl_content2_inset<?php echo $contentright; ?>" class="jl_content2_inset">
+
+											<?php if ($this->countModules('content-top')) : ?>
+												<div class="jl_contenttop clearfix">
+													<div class="jl_module row-fluid">
+														<jdoc:include type="modules" name="content-top" style="responsive"/>
+													</div>
+												</div>
+											<?php endif; ?>
+
+											<?php if ($this->countModules('position-2')) : ?>
+												<div id="jl_breadcrumbs">
+													<jdoc:include type="modules" name="position-2" style="xhtml"/>
+												</div>
+											<?php endif; ?>
+
+											<div id="jl_content">
+												<div id="jl_content_component">
+													<jdoc:include type="component"/>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+
+											<?php if ($this->countModules('content-bottom')) : ?>
+												<div class="jl_contentbottom">
+													<div class="jl_module row-fluid">
+														<jdoc:include type="modules" name="content-bottom" style="responsive"/>
+													</div>
+													<div class="clearfix"></div>
 												</div>
 											<?php endif; ?>
 
 										</div>
-									<?php endif; ?>
 
-									<div id="jl_maincontent_2">
-										<div id="jl_content_inset<?php echo $contentleft . $contentright; ?>">
-											<div id="jl_content2_inset<?php echo $contentright; ?>" class="jl_content2_inset">
-
-												<?php if ($this->countModules('content-top')) : ?>
-													<div class="jl_contenttop clearfix">
-														<div class="jl_module row-fluid">
-															<jdoc:include type="modules" name="content-top" style="responsive"/>
-														</div>
-													</div>
-												<?php endif; ?>
-
-												<?php if ($this->countModules('position-2')) : ?>
-													<div id="jl_breadcrumbs">
-														<jdoc:include type="modules" name="position-2" style="xhtml"/>
-													</div>
-												<?php endif; ?>
-
-												<div id="jl_content">
-													<div id="jl_content_component">
-														<jdoc:include type="component"/>
-													</div>
-													<div class="clearfix"></div>
-												</div>
-
-												<?php if ($this->countModules('content-bottom')) : ?>
-													<div class="jl_contentbottom">
-														<div class="jl_module row-fluid">
-															<jdoc:include type="modules" name="content-bottom" style="responsive"/>
-														</div>
-														<div class="clearfix"></div>
-													</div>
-												<?php endif; ?>
-
-											</div>
-
-											<?php if ($this->countModules('contentright')) : ?>
-												<div id="jl_contentright">
-													<div class="jl_sidebar">
-														<div class="jl_module">
-															<jdoc:include type="modules" name="contentright" style="xhtml"/>
-														</div>
-													</div>
-												</div>
-											<?php endif ?>
-
-										</div>
-
-										<?php if ($this->countModules('contentleft')) : ?>
-											<div id="jl_contentleft">
+										<?php if ($this->countModules('contentright')) : ?>
+											<div id="jl_contentright">
 												<div class="jl_sidebar">
 													<div class="jl_module">
-														<jdoc:include type="modules" name="contentleft" style="xhtml"/>
+														<jdoc:include type="modules" name="contentright" style="xhtml"/>
 													</div>
 												</div>
 											</div>
@@ -219,43 +211,41 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 
 									</div>
 
-									<?php if ($this->countModules('position-9 or position-10')) : ?>
-										<div class="jl_under_content">
-
-											<?php if ($this->countModules('position-9')) : ?>
-												<div class="jl_module">
-													<jdoc:include type="modules" name="position-9" style="responsive"/>
-												</div>
-											<?php endif; ?>
-
-											<?php if ($this->countModules('position-10')) : ?>
-												<div class="jl_module">
-													<jdoc:include type="modules" name="position-10" style="responsive"/>
-												</div>
-											<?php endif; ?>
-
-										</div>
-									<?php endif; ?>
-								</div>
-								<?php if ($this->countModules('position-8')) : ?>
-									<div id="jl_right">
-										<div class="jl_separate_left">
+									<?php if ($this->countModules('contentleft')) : ?>
+										<div id="jl_contentleft">
 											<div class="jl_sidebar">
 												<div class="jl_module">
-													<jdoc:include type="modules" name="position-8" style="xhtml"/>
+													<jdoc:include type="modules" name="contentleft" style="xhtml"/>
 												</div>
 											</div>
 										</div>
+									<?php endif ?>
+
+								</div>
+
+								<?php if ($this->countModules('position-9 or position-10')) : ?>
+									<div class="jl_under_content">
+
+										<?php if ($this->countModules('position-9')) : ?>
+											<div class="jl_module">
+												<jdoc:include type="modules" name="position-9" style="responsive"/>
+											</div>
+										<?php endif; ?>
+
+										<?php if ($this->countModules('position-10')) : ?>
+											<div class="jl_module">
+												<jdoc:include type="modules" name="position-10" style="responsive"/>
+											</div>
+										<?php endif; ?>
+
 									</div>
 								<?php endif; ?>
 							</div>
-							<?php if ($this->countModules('position-7')) : ?>
-								<div id="jl_left">
-									<div class="jl_separate_right">
-										<div class="jl_sidebar">
-											<div class="jl_module">
-												<jdoc:include type="modules" name="position-7" style="xhtml"/>
-											</div>
+							<?php if ($this->countModules('position-8')) : ?>
+								<div id="jl_right">
+									<div class="jl_sidebar">
+										<div class="jl_module">
+											<jdoc:include type="modules" name="position-8" style="xhtml"/>
 										</div>
 									</div>
 								</div>
