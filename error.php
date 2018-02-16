@@ -61,12 +61,6 @@ $templateURL = $this->baseurl."/templates/".$this->template;
 
 	@font-face { font-family: 'Carrois Gothic'; src: url(<?php echo $this->baseurl; ?>/templates/<?php echo $this->template ?>/fonts/CarroisGothic-Regular.ttf);  }
 
-	#jl_left { width: <?php echo $sidebar_width; ?>%; }
-	#jl_right { width: <?php echo $sidebar_width; ?>%; }
-	#jl_right_out, #jl_right_out_right, #jl_content_out { width: 100%; }
-	#jl_right_out_left, #jl_right_out_left_right { width: <?php echo $sidebar_width; ?>%; }
-	#jl_content_out_right { width: <?php echo $sidebar_width; ?>%; }
-
 	.jl_center { max-width: <?php echo $template_width; ?>;  min-width: 150px;}
 	body, p, td, tr {
 	<?php echo "font-family: ". $fontfamily .";"; ?> 
