@@ -11,7 +11,7 @@ $span = 'span' . floor(12 / count($list));
 
 ?>
 <ul class="nav<?php echo $class_sfx; ?>">
-<?php foreach ($list as $i => $item) :
+	<?php foreach ($list as $i => $item) :
 	$class = $span . ' item-' . $item->id;
 
 	if ($item->id == $default_id)
@@ -85,20 +85,20 @@ $span = 'span' . floor(12 / count($list));
 		$attributes['onclick'] = "window.open(this.href, 'targetWindow', '" . $options . "'); return false;";
 	}
 
-?>
-  <li class="<?php echo $class; ?>">
-   	<?php if ($item->params->get('menu_text', 1)) : ?>
-	    <h3><?php echo $item->title; ?></h3>
-	<?php endif; ?>
-	<?php $link = JFilterOutput::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)); ?>
-    <?php echo JHtml::_('link', $link, '<img src="' . $item->menu_image . '" class="nav-icon" />', $attributes); ?>
-  <?php if ($item->deeper) : ?>
-      <ul class="nav-child unstyled small">
-  <?php elseif ($item->shallower) : ?>
-      </li>
-      <?php echo str_repeat('</ul></li>', $item->level_diff); ?>
-  <?php else : ?>
-      </li>
-  <?php endif; ?>
-<?php endforeach; ?>
-</ul>
+	?>
+	<li class="<?php echo $class; ?>">
+		<?php if ($item->params->get('menu_text', 1)) : ?>
+			<h3><?php echo $item->title; ?></h3>
+		<?php endif; ?>
+		<?php $link = JFilterOutput::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)); ?>
+		<?php echo JHtml::_('link', $link, '<img src="' . $item->menu_image . '" class="nav-icon" />', $attributes); ?>
+		<?php if ($item->deeper) : ?>
+		<ul class="nav-child unstyled small">
+			<?php elseif ($item->shallower) : ?>
+				</li>
+				<?php echo str_repeat('</ul></li>', $item->level_diff); ?>
+			<?php else : ?>
+				</li>
+			<?php endif; ?>
+			<?php endforeach; ?>
+		</ul>
