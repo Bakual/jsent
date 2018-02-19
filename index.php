@@ -17,6 +17,7 @@ $this->setHtml5(true);
 $path = $this->baseurl . '/templates/' . $this->template . '/';
 
 // Load Bootstrap
+JHtml::_('script', 'template.js', array('relative' => true));
 JHtmlBootstrap::loadCss(true, $this->direction);
 ?>
 <!DOCTYPE html>
