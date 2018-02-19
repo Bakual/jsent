@@ -68,20 +68,6 @@
         color: #FFF;
     }
 
-    .jl_user_6 {
-        width: 33.3%;
-    }
-
-    #jl_content_out_left_right #jl_content_inset_contentright #jl_contentright {
-        float: none;
-        width: 100%;
-    }
-
-    #jl_content_out_left_right #jl_content_inset_contentright #jl_contentright {
-        border: 0;
-        margin-top: 1em;
-    }
-
     .toggleMainmenu, .toggleSubmenu {
         display: inline-block !important;
     }
@@ -91,23 +77,11 @@
     }
 
     #jl_bg {
-        padding: 3% 3.5%;
+        padding: 2% 3%;
     }
 
     #jl_topright_search #jl_search input.inputbox {
         width: 30%;
-    }
-
-    .jl_user_6 {
-        width: 50%;
-    }
-
-    #jl_content_out_left_right #jl_content_out_right {
-        width: 100%;
-    }
-
-    #jl_bg {
-        padding: 2% 3%;
     }
 
     .jl_center {
@@ -127,14 +101,14 @@
         width: 100%;
     }
 
-    #jl_topright_topmenu_search_logo, #jl_topleft_topmenu_search, .jl_user_4, .jl_user_5 {
+    #jl_topright_topmenu_search_logo, #jl_topleft_topmenu_search {
         width: 50%;
     }
 
-    #jl_content_out_left_right, #jl_content_out_left, #jl_content_out_right, #jl_right, #jl_left,
-    #jl_content_inset_contentleft_contentright #jl_contentright, #jl_content_inset_contentright #jl_contentright, #jl_content2_inset_contentright, #jl_content_inset_contentleft, #jl_content_inset_contentleft #jl_content2_inset, #jl_content_inset_contentright #jl_contentright {
+    #jl_content_out_left_right, #jl_content_out_left, #jl_content_out_right, #jl_right, #jl_left {
         width: 100% !important;
     }
+
     #jl_left .jl_sidebar, #jl_right .jl_sidebar {
         padding: 0 !important;
     }
@@ -152,7 +126,6 @@
     }
 
     .jl_center {
-        max-width: 100%;
         border-radius: 0;
     }
 
@@ -241,11 +214,11 @@
         padding: 0 !important;
     }
 
-    .jl_user_1, .jl_user_2, .jl_user_3, .jl_user_4, .jl_user_5, .jl_user_6 {
-        width: 100%;
-    }
-
-    #jl_topleft, #jl_topright, #jl_content_out_left_right, #jl_content_out_left, #jl_content_out_right, .cols-2 .column-1, .cols-2 .column-2, .cols-3 .column-1, .cols-3 .column-2, .cols-3 .column-3, .cols-4 .column-1, .cols-4 .column-2, .cols-4 .column-3, .cols-4 .column-4, #jl_content_inset_contentleft_contentright, #jl_contentleft, #jl_contentright {
+    #jl_topleft, #jl_topright,
+    #jl_content_out_left_right, #jl_content_out_left, #jl_content_out_right,
+    .cols-2 .column-1, .cols-2 .column-2, .cols-3 .column-1, .cols-3 .column-2, .cols-3 .column-3, .cols-4 .column-1, .cols-4 .column-2, .cols-4 .column-3, .cols-4 .column-4,
+    #jl_content_inset_left_right,
+    #jl_contentleft, #jl_contentright {
         width: 100% !important;
         margin: 0;
     }

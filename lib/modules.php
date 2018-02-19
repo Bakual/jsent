@@ -14,7 +14,6 @@ $sidebarWidth = $this->params->get("sidebarWidth", "25");
 $cellpadding   = $this->params->get("cellpadding", "0.5em");
 $contentleft   = $this->countModules("contentleft") ? '_contentleft' : '';
 $contentright  = $this->countModules("contentright") ? '_contentright' : '';
-// Removed: inset_contentright, inset_contentleft
 ?>
 <style type="text/css">
 	<?php if ($this->params->get('googleFont', 1)) : ?>
@@ -44,7 +43,7 @@ $contentright  = $this->countModules("contentright") ? '_contentright' : '';
 	}
 
 	#jl_content_out_left, #jl_content_out_right,
-	#jl_content_inset_left, #jl_content_inset_right,
+	#jl_content_inset_left, #jl_content_inset_right
 	{
 		width: <?php echo 100 - $sidebarWidth; ?>%;
 	}

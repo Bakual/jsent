@@ -28,6 +28,7 @@
 	<positions>
 		<position>article</position>
 		<position>afterheader</position>
+		<position>beforefooter</position>
 		<position>footer</position>
 		<position>footer-nav</position>
 		<position>header</position>
