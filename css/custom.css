@@ -20,16 +20,6 @@
 #jl_mainmenu_maxi ul li li a {
   background-image: initial;
 }
-/* Responsive Menu Schriftfarbe */
-@media only screen and (max-width: 768px)
-{
-.responsive_menu ul.menu li a,
-.responsive_menu ul.menu li span {
-    color: #999;
-}
-  
-}
-
 .element-invisible,
 .hidelabeltxt {
     position: absolute;
@@ -152,7 +142,7 @@ td.ferien:hover {
 
 /* JDownloads Link verstecken */
 .jd_footer {
- display: none; 
+ display: none;
 }
 
 /* JSENT Footer verstecken */

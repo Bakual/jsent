@@ -6,6 +6,29 @@
  * @license     https://creativecommons.org/licenses/by-sa/3.0/
  **/
 
+.responsive_menu li a {
+    font-size: 110%;
+}
+
+.responsive_menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.responsive_menu ul ul {
+    padding: 1em 0 0 0;
+}
+
+.responsive_menu ul li {
+    padding-left: 25px;
+    line-height: 43px;
+}
+
+.responsive_menu ul li a,
+.responsive_menu ul li span {
+    color: #FFF;
+}
+
 /*
  * Breakpoints taken from BootStrap:
  * Small (Phones): max-width: 767px
@@ -19,38 +42,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .responsive_menu li a {
-        font-size: 110%;
-    }
-
-    .responsive_menu ul {
-        list-style: none;
-        *zoom: 1;
-        padding: 1em 0;
-        margin: 0;
-    }
-
-    .responsive_menu ul ul {
-        padding: 1em 0 0 0;
-    }
-
-    .responsive_menu ul li {
-        display: block;
-        padding: 0.4em 1.2em;
-        width: 100%;
-    }
-
     .responsive_menu ul ul li.parent, .responsive_menu ul li.parent.liopen {
         padding-bottom: 0;
     }
 
     .responsive_menu ul li li, .responsive_menu ul li li:hover {
         padding-right: 0;
-    }
-
-    .responsive_menu ul.menu li a, .responsive_menu ul.menu li span {
-        display: block;
-        color: #FFF;
     }
 
     .responsive_menu ul .liopen ul, .responsive_menu ul .liopen:hover ul, .responsive_menu ul .active ul, .responsive_menu ul .active:hover ul {
@@ -66,10 +63,6 @@
     #jl_submenu_mini ul li.current, #jl_submenu_mini ul li.current a {
         background: #999;
         color: #FFF;
-    }
-
-    .toggleMainmenu, .toggleSubmenu {
-        display: inline-block !important;
     }
 
     .jl_menu {

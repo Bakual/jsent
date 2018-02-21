@@ -18,19 +18,17 @@ function modChrome_mainmenu($module, &$params, &$attribs)
 	if (!empty ($module->content)) : ?>
 		<div id="jl_mainmenu">
 			<a href="#<?php echo $module->id; ?>"
-			   title="<?php echo JText::_('TPL_JSENT_CLICK'); ?>"
+			   title="<?php echo JText::_('TPL_JSENT_TOGGLE_MENU'); ?>"
 			   onclick="auf('jl_mainmenu_mini'); return false"
-			   class="toggleMainmenu" id="link_<?php echo $module->id ?>"><?php echo $module->title; ?></a>
-			<div class="jl_menu" id="jl_mainmenu_maxi">
-				<?php
-				$modulecontent = str_replace('<ul class="menu">', '<ul class="mainmenu suckerfish">', $module->content);
-				echo $modulecontent; ?>
+			   id="link_<?php echo $module->id ?>" class="toggleMainmenu visible-phone">
+				<?php echo $module->title; ?>
+			</a>
+			<div class="jl_menu hidden-phone" id="jl_mainmenu_maxi">
+				<?php echo $module->content; ?>
 				<div class="clearfix"></div>
 			</div>
-			<div class="responsive_menu" id="jl_mainmenu_mini" style="display:none;">
-				<?php
-				$modulecontent = str_replace('<ul class="menu">', '<ul class="mainmenu suckerfish">', $module->content);
-				echo $modulecontent; ?>
+			<div  id="jl_mainmenu_mini" class="responsive_menu" style="display:none">
+				<?php echo $module->content; ?>
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -45,9 +43,9 @@ function modChrome_submenu($module, &$params, &$attribs)
 	if (!empty ($module->content)) : ?>
 		<div id="jl_submenu">
 			<a href="#<?php echo $module->id; ?>"
-			   title="<?php echo JText::_('TPL_JSENT_CLICK'); ?>"
+			   title="<?php echo JText::_('TPL_JSENT_TOGGLE_MENU'); ?>"
 			   onclick="auf('jl_submenu_mini'); return false"
-			   class="toggleSubmenu" id="link_<?php echo $module->id ?>"><?php echo $module->title; ?></a>
+			   class="toggleSubmenu visible-phone" id="link_<?php echo $module->id ?>"><?php echo $module->title; ?></a>
 			<div class="jl_menu" id="jl_submenu_maxi">
 				<?php
 				$modulecontent = str_replace('<ul class="menu">', '<ul class="submenu suckerfish">', $module->content);

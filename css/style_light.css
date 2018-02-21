@@ -11,16 +11,22 @@
 }
 
 #jl_mainmenu a.toggleMainmenu {
-    background: url(../images/light/responsive_menu_button.png) left top no-repeat;
+    background-image: url(../images/light/responsive_menu_button.png);
+    color: #888;
 }
 
 #jl_mainmenu .jl_menu ul a, #jl_mainmenu .jl_menu ul .separator {
     background: url(../images/light/navborder.png) top right no-repeat;
-    color: #999;
+    color: #888;
+}
+
+.responsive_menu ul li {
+    padding-left: 25px;
+    line-height: 42px;
 }
 
 .jl_style_light .jl_menu a, .jl_style_light .jl_menu .separator {
-    color: #999;
+    color: #888;
 }
 
 .jl_menu li a:hover, .jl_menu li:hover ul {
@@ -30,14 +36,14 @@
 .responsive_menu ul li.current,
 .responsive_menu ul li.current a {
     background-color: #F4F4F4;
-    color: #999;
+    color: #888;
 }
 
 .jl_menu li li a,
 .jl_menu li li .separator, .responsive_menu ul li a, .responsive_menu ul li .separator {
     border-right: 0;
     background: none;
-    color: #999;
+    color: #888;
 }
 
 .jl_module h3 {
@@ -49,7 +55,7 @@
 }
 
 .contentheading, .contentheading a {
-    color: #999 !important;
+    color: #888 !important;
 }
 
 .componentheading, .componentheading a {

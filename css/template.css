@@ -557,9 +557,6 @@ div.icons > div {
 }
 
 #jl_mainmenu {
-    padding: 0.4em 0.8em 0 0.8em;
-    border: none;
-    margin: 0;
     background: repeat-x top;
     border-radius: 5px 5px 0 0;
 }
@@ -699,7 +696,6 @@ div.icons > div {
     background: url(../images/submenu.png) repeat-x bottom;
     border-radius: 0 0 3px 3px;
     margin: -1px 0;
-    padding: 0.7em 0.8em;
 }
 
 #jl_submenu_maxi .responsive_menu {
@@ -815,26 +811,16 @@ div.icons > div {
     color: #333;
 }
 
-.toggleMainmenu, .toggleSubmenu {
-    display: none;
-    width: 90%;
-}
-
-#jl_navigation a.toggleMainmenu, #jl_navigation a.toggleSubmenu {
-    display: none;
-    height: 34px;
-    line-height: 30px;
-    margin: 0 0 0.3em 0;
-    padding: 0 1em 0 3.3em;
+#jl_navigation a.toggleMainmenu,
+#jl_navigation a.toggleSubmenu {
+    line-height: 43px;
+    padding-left: 60px;
     color: #FFF;
-}
-
-.jl_style_light #jl_mainmenu a.toggleMainmenu {
-    color: #999;
+    background: 11px 5px no-repeat;
 }
 
 #jl_navigation a.toggleSubmenu {
-    background: url(../images/light/responsive_menu_button.png) left top no-repeat;
+    background-image: url(../images/light/responsive_menu_button.png);
     color: #999;
 }
 

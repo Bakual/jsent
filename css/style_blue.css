@@ -11,7 +11,7 @@
 }
 
 #jl_mainmenu a.toggleMainmenu {
-    background: url(../images/blue/responsive_menu_button.png) left top no-repeat;
+    background-image: url(../images/blue/responsive_menu_button.png);
 }
 
 #jl_mainmenu .jl_menu ul a, #jl_mainmenu .jl_menu ul .separator {

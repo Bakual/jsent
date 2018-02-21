@@ -51,7 +51,6 @@ $templateURL = $this->baseurl."/templates/".$this->template;
 <title><?php echo $this->error->getCode(); ?> - <?php echo $this->title; ?></title>
 
 <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/template.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template ?>/css/menu.css" type="text/css" /> 
 
 <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/style_<?php echo $this->params->get('colorVariation'); ?>.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template ?>/css/typo.css" type="text/css" />
