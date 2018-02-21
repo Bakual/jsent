@@ -17,6 +17,7 @@ $this->setHtml5(true);
 $path = $this->baseurl . '/templates/' . $this->template . '/';
 
 // Load Bootstrap
+JHtml::_('jquery.framework');
 JHtml::_('script', 'template.js', array('relative' => true));
 JHtmlBootstrap::loadCss(true, $this->direction);
 ?>
@@ -26,9 +27,9 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<jdoc:include type="head"/>
 	<link href="<?php echo $path; ?>css/template.css" rel="stylesheet"/>
-	<link href="<?php echo $path; ?>css/style_<?php echo $this->params->get('colorVariation'); ?>.css" rel="stylesheet"/>
 	<link href="<?php echo $path; ?>css/typo.css" rel="stylesheet"/>
 	<link href="<?php echo $path; ?>css/responsive.css" rel="stylesheet"/>
+	<link href="<?php echo $path; ?>css/style_<?php echo $this->params->get('colorVariation'); ?>.css" rel="stylesheet"/>
 	<link href="<?php echo $path; ?>css/custom.css" rel="stylesheet"/>
 	<?php if ($this->direction == 'rtl') : ?>
 		<link href="<?php echo $path; ?>css/template_rtl.css" rel="stylesheet"/>
