@@ -245,8 +245,8 @@ JHtmlBootstrap::loadCss(true, $this->direction);
 						</div>
 
 						<?php if ($this->countModules('beforefooter')) : ?>
-							<div class="jl_positions clearfix">
-								<div class="jl_module">
+							<div class="clearfix">
+								<div class="jl_module row-fluid">
 									<jdoc:include type="modules" name="beforefooter" style="xhtml"/>
 								</div>
 							</div>
