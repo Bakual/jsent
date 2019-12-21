@@ -31,6 +31,33 @@
     overflow: hidden;
 }
 
+/* Jungschargruppen */
+@media only screen and (max-width: 768px)
+{
+    .jungschargruppen .buben {
+        border-top: 1px solid #eee;
+        margin-top: 15px;
+    }
+}
+
+.froeschli {
+    background-color: #cfc;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+.maedchen {
+    background-color: #fcc;
+}
+.buben {
+    background-color: #cff3ff;
+}
+.froeschli,
+.maedchen,
+.buben {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* Fixing Blog view */
 .cols-2 .column-1,
 .cols-2 .column-2 {
