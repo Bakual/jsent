@@ -22,7 +22,7 @@ p, .search dd {
 /**
  * Font Size
  */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, .tip-title {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, .tip-title {
     font-size: 100%;
 }
 
@@ -74,10 +74,6 @@ h6 {
 
 .jl_module h3, #jl_header h3, #jl_topmenu .jl_small h3, #jl_search input.inputbox {
     font-size: 110%;
-}
-
-blockquote {
-    font-size: 105%;
 }
 
 .jl_module ul li li, .jl_module ul li li li {
@@ -165,15 +161,6 @@ img {
     margin: 0 !important;
     padding: 0;
     width: auto;
-}
-
-blockquote {
-    padding: 10px 15px;
-    font-style: italic;
-}
-
-blockquote.left, blockquote.right {
-    width: 30%;
 }
 
 hr {
@@ -513,12 +500,6 @@ input[type=reset]:hover {
 legend {
     line-height: 200%;
     height: 200%;
-}
-
-dl {
-}
-
-dt {
 }
 
 dt.result-title {
