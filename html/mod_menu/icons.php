@@ -90,19 +90,19 @@ $span = 'span' . floor(12 / count($list));
 		<?php if ($item->params->get('menu_text', 1)) : ?>
 			<h3><?php echo $item->title; ?></h3>
 		<?php endif; ?>
-		<?php $image = '<img src="' . $item->menu_image . '" class="nav-icon" />'; ?>
-		<?php $image2 = str_replace ('.', '2.', $item->menu_image); ?>
-		<?php $imgtoggle = false; ?>
-		<?php if (file_exists(JPATH_SITE . '/' . $image2)) : ?>
-	<?php $imgtoggle = true; ?>
-	<?php $image .= '<img src="' . $image2 . '" class="nav-icon" />'; ?>
-		<div class="imgtoggle">
-			<?php endif; ?>
-			<?php $link = JFilterOutput::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)); ?>
-			<?php echo JHtml::_('link', $link, $image, $attributes); ?>
-			<?php if ($imgtoggle) : ?>
-		</div>
-	<?php endif; ?>
+        <?php $image = '<img src="' . $item->menu_image . '" class="nav-icon" />'; ?>
+        <?php $image2 = str_replace ('.', '2.', $item->menu_image); ?>
+        <?php $imgtoggle = false; ?>
+        <?php if (file_exists(JPATH_SITE . '/' . $image2)) : ?>
+        	<?php $imgtoggle = true; ?>
+	        <?php $image .= '<img src="' . $image2 . '" class="nav-icon" />'; ?>
+        	<div class="imgtoggle">
+        <?php endif; ?>
+		<?php $link = JFilterOutput::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)); ?>
+		<?php echo JHtml::_('link', $link, $image, $attributes); ?>
+       	<?php if ($imgtoggle) : ?>
+        	</div>
+       	<?php endif; ?>
 		<?php if ($item->deeper) : ?>
 		<ul class="nav-child unstyled small">
 			<?php elseif ($item->shallower) : ?>
