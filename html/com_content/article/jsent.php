@@ -118,14 +118,24 @@ foreach($this->item->jcfields as $jcfield)
       <?php // Header ?>
       <div class="row-fluid nav-icon">
   		<div class="span6">
+      		<?php if ($jcfields['icon2']->rawvalue) : ?>
+      		  <div class="imgtoggle">
+            <?php endif; ?>
     		<img src="<?php echo $jcfields['icon']->rawvalue; ?>" alt="">
+            <?php if ($jcfields['icon2']->rawvalue) : ?>
+    			<img src="<?php echo $jcfields['icon2']->rawvalue; ?>" alt="">
+              </div>
+            <?php endif; ?>
     		<div>
       			<strong><?php echo $jcfields['titel']->rawvalue; ?></strong><br>
       			<span class="muted"><?php echo $jcfields['beschreibung']->rawvalue; ?></span>
       		</div>
       	</div>
   		<div class="span6">
-    		<img src="images/Grafiken/webmail2.png" alt="">
+          	<div class="imgtoggle">
+    			<img src="images/Grafiken/webmail.png" alt="">
+    			<img src="images/Grafiken/webmail2.png" alt="">
+        	</div>
       		<div>
       			<strong><?php echo $jcfields['kontaktname']->rawvalue; ?></strong><br>
       			<span class="muted">
