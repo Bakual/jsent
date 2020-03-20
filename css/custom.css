@@ -7,13 +7,8 @@
  */
 
 /* Menu */
-#jl_mainmenu_maxi ul li ul {
-	width: 14em;
-}
-
-#jl_submenu_maxi ul ul {
-	width: 14em;
-}
+#jl_mainmenu_maxi ul li ul {width:14em;}
+#jl_submenu_maxi ul ul {width:14em;}
 
 /* Fix Menu CSS */
 #jl_mainmenu_maxi ul li.active li,
@@ -23,196 +18,266 @@
 #jl_mainmenu_maxi ul li li.active .separator,
 #jl_mainmenu_maxi ul li li,
 #jl_mainmenu_maxi ul li li a {
-	background-image: initial;
+  background-image: initial;
 }
-
 .element-invisible,
 .hidelabeltxt {
-	position: absolute;
-	padding: 0 !important;
-	margin: 0 !important;
-	border: 0;
-	height: 0 !important;
-	width: 0 !important;
-	overflow: hidden;
+    position: absolute;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0;
+    height: 0 !important;
+    width:  0 !important;
+    overflow: hidden;
 }
 
 /* Jungschargruppen */
-@media only screen and (max-width: 768px) {
-	.jungschargruppen .buben {
-		border-top: 1px solid #eee;
-		margin-top: 15px;
-	}
+@media only screen and (max-width: 768px)
+{
+    .jungschargruppen .buben {
+        border-top: 1px solid #eee;
+        margin-top: 15px;
+    }
 }
 
 .froeschli {
-	background-color: #cfc;
-	padding-bottom: 10px;
-	padding-top: 1px;
+    background-color: #cfc;
+    padding-bottom: 10px;
+    padding-top: 1px;
 }
-
 .maedchen {
-	background-color: #fcc;
+    background-color: #fcc;
 }
-
 .buben {
-	background-color: #cff3ff;
+    background-color: #cff3ff;
 }
-
 .froeschli,
 .maedchen,
 .buben {
-	padding-left: 10px;
-	padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Fixing Blog view */
 .cols-2 .column-1,
 .cols-2 .column-2 {
-	width: initial;
+  width: initial;
 }
 
 /* Resetting style for tip class */
 .tip {
-	float: none;
-	border: none;
-	padding: 0;
-	background-color: initial;
+  float: none;
+  border: none;
+  padding: 0;
+  background-color: initial;
 }
 
 /* "Kinderportrait" */
 .kinderportrait h2,
-.kinderportrait p {
-	font-size: 125%;
-	margin: 15px 0;
-	font-family: "comic sans ms", sans-serif;
+.kinderportrait p
+{
+  font-size: 125%;
+  margin: 15px 0;
+  font-family: "comic sans ms", sans-serif;
 }
 
-.kinderportrait p.strong {
-	font-size: 250%;
-	line-height: 150%;
+.kinderportrait p.strong
+{
+  font-size: 250%;
+  line-height: 150%;
 }
 
 .nav-icon > div {
-	font-size: 125%;
-	margin-bottom: 20px;
+  font-size: 125%;
+  margin-bottom: 20px;
 }
-
 .nav-icon > div > div {
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-.nav-icon img,
+.nav-icon img ,
 img.nav-icon {
-	width: 100px;
-	height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 /* Icon Menu */
 .jl_module ul.nav-pills li {
-	list-style: none;
+  list-style: none;
 }
 
 /* Farbige Tabellenzellen für Jahresplan */
 .eventlegende .jungschar,
 td.jungschar {
-	background-color: #d0e9c6 !important;
+    background-color: #d0e9c6 !important;
 }
-
 .eventlegende .jungschar:hover,
 td.jungschar:hover {
-	background-color: #c2e2b6 !important;
+    background-color: #c2e2b6 !important;
 }
-
 .eventlegende .event,
 td.event {
-	background-color: #c4e3f3 !important;
+    background-color: #c4e3f3 !important;
 }
-
 .eventlegende .event:hover,
 td.event:hover {
-	background-color: #c0e1f2 !important;
+    background-color: #c0e1f2 !important;
 }
-
 .eventlegende .ferien,
 td.ferien {
-	background-color: #eee !important;
+    background-color: #eee !important;
 }
-
 .eventlegende .ferien:hover,
 td.ferien:hover {
-	background-color: #e6e6e6 !important;
+    background-color: #e6e6e6 !important;
 }
 
 /* Erlaube Tabellen auf kleinen Bildschirmen zu scrollen */
 @media screen and (max-width: 640px) {
-	table {
-		overflow-x: auto;
-		display: block;
-	}
+  table {
+  	overflow-x: auto;
+  	display: block;
+  }
 }
 
 /* Slider */
 .slide-text p {
-	color: #fff;
-	font-size: 25px;
+  color: #fff;
+  font-size: 25px;
 }
 
 /* Farbige Tabellen in Artikel wie zB Kontakt */
 .table-colored td {
-	background-color: #fef0d6;
+  background-color: #fef0d6;
 }
-
 .table-colored tr:first-child td {
-	background-color: #feb17a;
-	color: #f98405;
-	font-weight: bold;
+  background-color: #feb17a;
+  color: #f98405;
+  font-weight: bold;
 }
-
 .table-colored td:first-child {
-	background-color: #fee0b7;
-	min-width: 25px;
-	max-width: 100px;
+  background-color: #fee0b7;
+  min-width: 25px;
+  max-width: 100px;
 }
-
 .table-colored tr:first-child td:first-child {
-	background-color: #fc9720;
+  background-color: #fc9720;
 }
-
 .table-colored h3 {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 /* JDownloads Link verstecken */
 .jd_footer {
-	display: none;
+ display: none;
 }
 
 /* JSENT Footer verstecken */
 #jl_copyright {
-	/* display: none; */
+  /* display: none; */
 }
 
 /* Phoca Gallery Link verstecken */
 #phocagallery > div:last-child {
-	display: none !important;
+  display: none !important;
 }
 
 /* li Abstand resetten */
 #jl_content li {
-	padding-bottom: inherit;
+  padding-bottom: inherit;
 }
 
 /* Image Toggle on Hover  */
 .imgtoggle img:last-of-type {
-	display: none;
+  display: none;
 }
-
 .imgtoggle:hover img:last-of-type {
-	display: inline;
+  display: inline;  
+}
+.imgtoggle:hover img:first-of-type {
+  display: none;  
+}
+/* Flohmärt Helfer Formular */
+.flohmarkthelfer fieldset > div {
+  padding: 0 10px;
+}
+.flohmarkthelfer .visCustomText {
+  line-height: 1.2em;
+}
+.flohmarkthelfer .visCSSlabel {
+  width: 40%;
+}
+.flohmarkthelfer input.visCSSinput {
+  background-color: #fff;
+  width: 56%;
+}
+.flohmarkthelfer input[type='checkbox'].visCSSinput {
+  width: 20px;
+}
+.flohmarkthelfer .visCSSrllst {
+  width: 25%;
+}
+.flohmarkthelfer input.visCSStop10 {
+    margin-top: 10px;
+}
+.field46, .field61 {
+  background-color: #d0e9c6;
+  border: 1px solid #569b3c;
+}
+.field47, .field48, .field53, .field60 {
+  background-color: #c4e3f3;
+  border: 1px solid #2482b5;
+}
+.field54, .field55, .field56, .field57, .field58, .field59 {
+  background-color: #eac8c8;
+  border: 1px solid #a63f3f;
+}
+.field66, .field67 {
+  background-color: #dbc4f3;
+  border: 1px solid #7027be;
 }
 
-.imgtoggle:hover img:first-of-type {
-	display: none;
+/* Arcade League */
+@font-face {
+  font-family: 'arcade-titel';
+  src: url('/images/fonts/arcadetitel.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'arcade-text';
+  src: url('/images/fonts/arcadetext.ttf') format('truetype');
+}
+.arcadeleagueform #jl_content_inset {
+  background-color: rgba(0, 0, 0, .77);
+}
+.arcadeleagueform .visforms p,
+.arcadeleagueform label.radio {
+  color: #fff;
+  font-family: arcade-text, Helvetica, Arial, sans-serif;
+}
+.arcadeleagueform h4,
+.arcadeleagueform h5,
+.arcadeleagueform .visCustomText,
+.arcadeleagueform label,
+.arcadeleagueform label span {
+  color: #ffad66;
+  font-family: arcade-titel, Helvetica, Arial, sans-serif;
+}
+@media(min-width: 785px) {
+.arcadeleagueform .control-group.field78,
+.arcadeleagueform .control-group.field79,
+.arcadeleagueform .control-group.field80,
+.arcadeleagueform .control-group.field83,
+.arcadeleagueform .control-group.field84,
+.arcadeleagueform .control-group.field85 {
+  width: 33%;
+  float: left;
+}
+}
+.arcadeleagueform .fc-tbxfield82,
+.arcadeleagueform .fc-tbxfield90 {
+  clear: left;
+}
+.arcadeleagueform .form-actions {
+  background-color: inherit;
+  text-align: center
 }
