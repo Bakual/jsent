@@ -179,7 +179,6 @@ $templateURL = $this->baseurl."/templates/".$this->template;
 		<div id="jl_footer_left">
                         <?php $module = JModuleHelper::getModule( 'footer' );
                     echo JModuleHelper::renderModule( $module);	?>
-            <div id="jl_copyright">Design by <a href="http://www.schefa.com">schefa.com</a></div>
 		</div>
         
 		<div id="jl_footer_right">
